@@ -6,7 +6,14 @@ namespace StringCalculatorKata
     {
         public int Add(string v)
         {
-            return 0;
+            v.Split(",");
+            if (v == "")
+            {
+                return 0;
+            }
+
+            return int.Parse(v);
+                        
         }
     }
 }
