@@ -28,6 +28,19 @@ namespace StringCalculatorKata.Tests
 
             Assert.Equal(expected, result);
         }
+
+        [Theory()]
+        [InlineData("1,2", 3)]
+        [InlineData("2,3", 5)]
+        public void The_Sum_Of_Two_Numbers_Is_Correct(string input, int expected)
+        {
+            
+            var result = underTest.Add(input);
+
+            Assert.Equal(expected, result);
+        }
+
+        
     }
 }
 
